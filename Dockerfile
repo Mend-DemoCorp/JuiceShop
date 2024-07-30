@@ -48,4 +48,8 @@ COPY --from=installer --chown=65532:0 /juice-shop .
 COPY --chown=65532:0 --from=libxmljs-builder /juice-shop/node_modules/libxmljs ./node_modules/libxmljs
 USER 65532
 EXPOSE 3000
+# Mend traceability labels
+LABEL io.mend.image.dockerfile.path=main/Dockerfile
+LABEL org.opencontainers.image.source=https://github.com/Mend-DemoCorp/JuiceShop
+
 CMD ["/juice-shop/build/app.js"]
