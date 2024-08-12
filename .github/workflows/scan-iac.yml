@@ -1,4 +1,4 @@
-name: "Build & scan container image"
+name: "Mend IAC scan"
 
 on: workflow_dispatch
 

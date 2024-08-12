@@ -1,4 +1,4 @@
-name: "Build & scan container image"
+name: "Mend Dependancy scan"
 
 on: workflow_dispatch
 
