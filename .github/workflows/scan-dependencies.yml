@@ -27,5 +27,5 @@ jobs:
         MEND_URL: https://saas.mend.io
       run: |
         echo === Running Scan ===
-        mend dep --fail policy -s "*//GH_${{github.event.repository.name}}//GH_${{github.event.repository.name}}"
+        mend dep --fail-policy -s "*//GH_${{github.event.repository.name}}//GH_${{github.event.repository.name}}"
       continue-on-error: true
