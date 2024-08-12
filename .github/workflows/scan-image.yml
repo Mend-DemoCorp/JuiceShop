@@ -30,5 +30,5 @@ jobs:
         MEND_URL: https://saas.mend.io
       run: |
         echo === Running Scan ===
-        mend image juiceshop -s "*//GH_${{github.event.repository.name}}//GH_${{github.event.repository.name}}"
-      continue-on-error: true
+        mend image juiceshop --fail-policy -s "*//GH_${{github.event.repository.name}}//GH_${{github.event.repository.name}}"
+      continue-on-error: false
